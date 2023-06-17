@@ -1,0 +1,27 @@
+footer{
+	background-color: black;
+	color: whitesmoke;
+}
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px
+}
+.footer-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-links{
+	display: flex;
+	justify-content: center;
+}
+.contact-links a{
+	display: inline-block;
+	color: green;
+	font-size: 24px;
+	margin: 0 20px;
+	transition: all 0.3s ease;
+}
+.contact-links a:hover{
+	transform: translateY(-10px);
+}
