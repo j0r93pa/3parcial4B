@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="kujo.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 crossorigin="anonymous">
-<title></title>
 </head>
 <body>
+		<div style="margin: 24px;">
+	<nav class="navbar navbar-light" style="background-color: #241C36;">
+	<ul class="nav navbar-nav">
+	<li class="active">
+	<a class="navbar-brand" href="index.html">Inico</a>
+	</li>
+		<li>
+	<a href="menu.html">Menu</a>
+	</li>
+	<li>
+		<a href="pelicula.html">Pelicula</a>
+	</li>
+	<li>
+		<a href="calculadorafisica.html">Fisica</a>
+    </li>
+    <li>
+		<a href="calculadora.html">Calculadora</a>
+    </li>
+	<li>
+		<a href="cuestionario.html">Cuestionario</a>
+    </li>
+    <li>
+		<a href="perfil.html">Contacto</a>
+    </li>
+	          </ul>
+	     </div>
+	</nav>
 	<table style="background-color: pink;">
 		<tr>
 			<td style="background-color: pink;">
-				<img src="axel.png" alt="axel"
+				<img src="D:\we\img\axel.png" alt="axel"
 				style="max-width: 500px; height: auto;
 				position: relative; overflow: hidden;
 				display: block; margin: 0 0 0 0%; -webkit-border-radius: 50%;
 				-moz-border-radius: 50%; -ms-border-radius:
-				50%; -o-border-radius:50%, border-radius:50%; width: 80%; position: center;
+				50%; -o-border-radius:50%; border-radius:50%; width: 80%; position: center;
 				border: 10px DOUBLE cyan;">
 			</td>
 			<td style="background-color: pink;">
@@ -63,8 +94,6 @@ crossorigin="anonymous">
 			<p style="background-color: purple"><b>Paciente cero de la gripe verde</b></p>
 			</td>
 		</tr>
-		</table>
-		<table style="background-color: white">
 			<tr>
 			<td > 
 			<i class="fa fa-check-square" aria-hidden="true"
@@ -84,6 +113,32 @@ crossorigin="anonymous">
 			<p style="background-color: purple"><b>Life, Physical, and Social Science Occupations</b></p>
 			</td>
 		</tr>
+
 		</table>
+		<footer>
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-section about">
+				<h1>Contactame</h1>
+				<p>Si estas interesado en contactarme, puedes hacerlo a traves de cualquiera de las siguientes redes sociales</p>
+				<div class="contact-links">
+					<a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="http://discord.gg/Y5x7vMWW" target="_blank"><i class="fab fa-discord"></i></a>
+					<a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-reddit"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--con lo siguiente, hare que los links de las paginas se abran mediante javascript en una pagina nueva -->
+<script type="text/javascript">
+	const socialnetworks = document.querySelectorAll('contact-links a');
+	socialnetworks.forEach(link =>{
+		link.addEventListener('click', e=>{
+			e.preventDefault();
+			window.open(link.href, '_blank');
+		});
+	});
+</script>
 </body>
 </html>

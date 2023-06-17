@@ -1,0 +1,47 @@
+body{
+	background-color: #282F44;
+	height: 100vh;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.calc{
+	width: 30%;
+	height: 60%;
+	background-color: white;
+	align-content: center;
+	border: 2px solid black;
+	position: absolute;
+}
+#ans{
+	width: 90%;
+	margin-top: 20px;
+	font-family: arial;
+	font-size: 20px;
+	color: blue;
+}
+.btn input[type='button']{
+	width: 40px;
+	padding: 2px;
+	margin: 4px;
+	position: relative;
+	left: 23px;
+	top: 20px;
+	height: 35px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.5s ease;
+	background-color: grey;
+	border-radius: 6px;
+}
+.btn input[type='button']:hover{
+	background-color: gold;
+	color: white;
+}
+footer{
+bottom: -25px;
+position: absolute;
+width: 100%;
+}
